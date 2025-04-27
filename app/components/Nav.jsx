@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const Nav = () => {
+export default function Nav() {
   return (
     <div>
-        <h1>hola soy un nav bar</h1>
+        <h1>Hola soy una nav</h1>
     </div>
   )
 }
