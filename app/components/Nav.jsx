@@ -58,12 +58,12 @@ export default function Nav() {
         </div>
 
         <ul className='hidden md:visible font-montserrat flex text-black items-center justify-between w-1/2 h-auto font-medium lg:flex'>
-          <li><a href="#about">Sobre mi</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#trabajo">Trabajos</a></li>
-          <li><a href="https://wa.me/573114259002">Consulta</a></li>
+          <li><a aria-label='link' href="#about">Sobre mi</a></li>
+          <li><a aria-label='link' href="#servicios">Servicios</a></li>
+          <li><a aria-label='link' href="#trabajo">Trabajos</a></li>
+          <li><a aria-label='link' href="https://wa.me/573114259002">Consulta</a></li>
           <li className='h-12 w-32 bg-black text-white flex justify-center items-center bg-purple-900 rounded-lg'>
-          <a className='h-full w-full flex items-center justify-center' href="https://wa.me/573114259002">
+          <a aria-label='link' className='h-full w-full flex items-center justify-center' href="https://wa.me/573114259002">
               Contáctame
             </a>
           </li>
