@@ -78,17 +78,17 @@ export default function Nav() {
       >
         <ul className='font-montserrat flex flex-col items-start justify-start p-6'>
           <li className='py-3'>
-            <a onClick={toggleMenu} href="#about">Sobre mi</a>
+            <a aria-label='link' onClick={toggleMenu} href="#about">Sobre mi</a>
           </li>
           <li className='py-3'>
-            <a onClick={toggleMenu} href="#servicios">Servicios</a>
+            <a aria-label='link' onClick={toggleMenu} href="#servicios">Servicios</a>
           </li>
           <li className='py-3'>
-            <a onClick={toggleMenu} href="#trabajo">Trabajos</a>
+            <a aria-label='link' onClick={toggleMenu} href="#trabajo">Trabajos</a>
           </li>
-          <li className='py-3'><a href="https://wa.me/573114259002">Consulta</a></li>
+          <li className='py-3'><a aria-label='link' href="https://wa.me/573114259002">Consulta</a></li>
           <li className='h-12 w-32 bg-black text-white flex justify-center items-center bg-purple-700 rounded-lg py-3 mt-6'>
-            <a className='h-full w-full flex items-center justify-center' href="https://wa.me/573114259002">
+            <a aria-label='link' className='h-full w-full flex items-center justify-center' href="https://wa.me/573114259002">
               Contáctame
             </a>
           </li>
