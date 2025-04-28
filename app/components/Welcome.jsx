@@ -19,6 +19,7 @@ export default function Welcome() {
         </p>
         <div className="flex flex-col sm:flex-row justify-start mt-8 gap-4">
           <a
+            aria-label="link de descarga CV"
             className="flex h-12 px-6 items-center justify-center rounded-md font-semibold text-white bg-purple-700 hover:bg-purple-800 transition"
             href="/cv.pdf"
             download="Geovanny-CV.pdf"
@@ -26,6 +27,7 @@ export default function Welcome() {
             Descargar CV
           </a>
           <a
+            aria-label="link de servicios"
             className="flex h-12 px-6 items-center justify-center rounded-md font-semibold text-black border-2 border-gray-900 hover:bg-gray-100 transition"
             href="#servicios"
           >

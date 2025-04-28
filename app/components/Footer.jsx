@@ -16,13 +16,13 @@ export default function Footer() {
             Desarrollo lo que necesitas, con un enfoque en usabilidad y rendimiento
           </p>
           <div className="flex justify-center md:justify-start gap-6">
-            <a href="https://www.facebook.com/profile.php?id=61575495013895" target="_blank" className="text-3xl text-gray-400 hover:text-white transition">
+            <a aria-label="link facebook" href="https://www.facebook.com/profile.php?id=61575495013895" target="_blank" className="text-3xl text-gray-400 hover:text-white transition">
               <FaFacebookF />
             </a>
-            <a href="#" className="text-3xl text-gray-400 hover:text-white transition">
+            <a aria-label="link" href="#" className="text-3xl text-gray-400 hover:text-white transition">
               <FaInstagram />
             </a>
-            <a href="#" className="text-3xl text-gray-400 hover:text-white transition">
+            <a aria-label="link" href="#" className="text-3xl text-gray-400 hover:text-white transition">
               <FaLinkedinIn />
             </a>
           </div>
@@ -40,7 +40,7 @@ export default function Footer() {
             <span>geovannyx.casimirom@gmail.com</span>
           </div>
           <div className="flex justify-center md:justify-start">
-            <a href="https://wa.me/573114259002" className="flex items-center gap-2 border border-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-500 transition">
+            <a aria-label="link whatsapp" href="https://wa.me/573114259002" className="flex items-center gap-2 border border-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-500 transition">
               <FaEnvelope className="text-xl" />
               Escríbeme
             </a>

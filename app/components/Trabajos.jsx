@@ -69,6 +69,7 @@ export default function Portfolio() {
       <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 px-8 mt-16">
         {projects.map((project, index) => (
           <a
+            aria-label="link"
             key={index}
             href={project.link}
             target="_blank"
