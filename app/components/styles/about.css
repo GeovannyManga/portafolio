@@ -1,0 +1,6 @@
+.highlight {
+    background: linear-gradient(transparent 60%, #a78bfa 60%);
+    font-weight: 600;
+    transition: background-size 0.3s ease;
+  }
+  

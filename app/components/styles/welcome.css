@@ -1,0 +1,53 @@
+.cuadrito {
+  position: relative; /* Necesario para posicionar el ::after */
+}
+
+.cuadrito::after {
+  position: absolute;
+  top: 10px; /* Para pantallas pequeñas, mantenemos un top pequeño */
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  border-width: 20px;
+  border-style: solid;
+  border-color: #8200DB transparent transparent transparent;
+}
+
+/* Pantallas medianas (tabletas) */
+@media (min-width: 168px) {
+  .cuadrito::after {
+    top: 30px; /* Ajustamos el top para pantallas medianas */
+  }
+}
+
+/* Pantallas grandes (PC o más grandes) */
+@media (min-width: 1024px) {
+  .cuadrito::after {
+    top: 40px; /* Aumentamos el top para pantallas grandes */
+  }
+}
+
+
+
+.circulo {
+  position: relative;
+  border-radius: 50%;
+  border: 4px solid #d0b9f2; /* Color pastel más suave */
+  box-shadow: 0 0 4px #d0b9f2, 0 0 8px #d0b9f2, 0 0 12px #d0b9f2, 0 0 16px #d0b9f2; /* Efecto de neón suave */
+  transition: box-shadow 0.3s ease-in-out; /* Suavizar el efecto */
+  animation: neonPulse 4s ease-in-out infinite; /* Animación más lenta */
+}
+
+/* Animación para que el brillo suba y baje */
+@keyframes neonPulse {
+  0%, 100% {
+    box-shadow: 0 0 4px #d0b9f2, 0 0 8px #d0b9f2, 0 0 12px #d0b9f2, 0 0 16px #d0b9f2; /* Intensidad muy baja */
+  }
+  50% {
+    box-shadow: 0 0 14px #d0b9f2, 0 0 24px #d0b9f2, 0 0 36px #d0b9f2, 0 0 48px #d0b9f2; /* Intensidad alta */
+  }
+}
+
+.circulo:hover {
+  box-shadow: 0 0 16px #d0b9f2, 0 0 32px #d0b9f2, 0 0 48px #d0b9f2, 0 0 64px #d0b9f2; /* Brillo aumentado al pasar el cursor */
+}
