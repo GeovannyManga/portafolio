@@ -58,12 +58,14 @@ export default function Nav() {
         </div>
 
         <ul className='hidden md:visible font-montserrat flex text-black items-center justify-between w-1/2 h-auto font-medium lg:flex'>
-          <li>Sobre mi</li>
-          <li>Servicios</li>
-          <li>Trabajos</li>
-          <li>Consulta</li>
+          <li><a href="#about">Sobre mi</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#trabajo">Trabajos</a></li>
+          <li><a href="https://wa.me/573114259002">Consulta</a></li>
           <li className='h-12 w-32 bg-black text-white flex justify-center items-center bg-purple-900 rounded-lg'>
-            Contáctame
+          <a className='h-full w-full flex items-center justify-center' href="https://wa.me/573114259002">
+              Contáctame
+            </a>
           </li>
         </ul>
       </div>
@@ -84,7 +86,7 @@ export default function Nav() {
           <li className='py-3'>
             <a onClick={toggleMenu} href="#trabajo">Trabajos</a>
           </li>
-          <li className='py-3'>Consulta</li>
+          <li className='py-3'><a href="https://wa.me/573114259002">Consulta</a></li>
           <li className='h-12 w-32 bg-black text-white flex justify-center items-center bg-purple-700 rounded-lg py-3 mt-6'>
             <a className='h-full w-full flex items-center justify-center' href="https://wa.me/573114259002">
               Contáctame

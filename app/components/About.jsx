@@ -31,7 +31,7 @@ export default function About() {
 
         {/* Imagen */}
         <div className="flex justify-center items-center">
-          <Image src={"/persona.svg"} width={240} height={200} alt="foto" className="object-contain" />
+          <Image src={"/persona.webp"} width={240} height={200} alt="foto" className="object-contain" />
         </div>
       </div>
     </div>
