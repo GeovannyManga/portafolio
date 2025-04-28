@@ -51,7 +51,7 @@ export default function Nav() {
             <span className='font-montserrat text-4xl font-black text-purple-700'>Dev</span>
           </div>
           <div className='block lg:hidden'>
-            <button onClick={toggleMenu}>
+            <button aria-label='menu hamburguesa' onClick={toggleMenu}>
               <GiHamburgerMenu size={30} />
             </button>
           </div>
