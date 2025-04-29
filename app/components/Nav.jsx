@@ -5,10 +5,12 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [touchStartX, setTouchStartX] = useState(0);
+  const [touchStartY, setTouchStartY] = useState(0);
   const [scrolled, setScrolled] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
+  // Detectar scroll
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
@@ -17,27 +19,34 @@ export default function Nav() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Manejar gestos de deslizar
   useEffect(() => {
     const handleTouchStart = (event) => {
       setTouchStartX(event.touches[0].clientX);
+      setTouchStartY(event.touches[0].clientY);
     };
+
     const handleTouchEnd = (event) => {
       const touchEndX = event.changedTouches[0].clientX;
-      const distance = touchEndX - touchStartX;
+      const touchEndY = event.changedTouches[0].clientY;
+      const distanceX = touchEndX - touchStartX;
+      const distanceY = touchEndY - touchStartY;
 
-      if (distance > 100) {
-        setIsMenuOpen(true);
-      } else if (distance < -50) {
-        setIsMenuOpen(false);
+      if (distanceX > 100 && Math.abs(distanceY) < 100) {
+        setIsMenuOpen(true); // swipe derecha
+      } else if (distanceX < -50 && Math.abs(distanceY) < 100) {
+        setIsMenuOpen(false); // swipe izquierda
       }
     };
+
     window.addEventListener('touchstart', handleTouchStart);
     window.addEventListener('touchend', handleTouchEnd);
+
     return () => {
       window.removeEventListener('touchstart', handleTouchStart);
       window.removeEventListener('touchend', handleTouchEnd);
     };
-  }, [touchStartX]);
+  }, [touchStartX, touchStartY]);
 
   return (
     <>
