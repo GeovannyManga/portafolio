@@ -37,7 +37,7 @@ export default function Servicios() {
             key={index}
             className="bg-white shadow-lg rounded-2xl p-6 hover:scale-105 transform transition-all duration-300 border-t-4 border-purple-600"
           >
-            <h3 className="text-2xl font-bold text-purple-700 mb-4">{servicio.titulo}</h3>
+            <h6 className="text-2xl font-bold text-purple-700 mb-4">{servicio.titulo}</h6>
             <p className="text-gray-600 font-bold">{servicio.descripcion}</p>
           </div>
         ))}

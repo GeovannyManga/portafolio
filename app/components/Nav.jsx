@@ -25,7 +25,7 @@ export default function Nav() {
       const touchEndX = event.changedTouches[0].clientX;
       const distance = touchEndX - touchStartX;
 
-      if (distance > 50) {
+      if (distance > 100) {
         setIsMenuOpen(true);
       } else if (distance < -50) {
         setIsMenuOpen(false);
