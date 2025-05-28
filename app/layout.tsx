@@ -11,6 +11,9 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "GeoDev Portafolio Web",
   description: "Portafolio Web de un Desarrollador (Programador) Frontend y Backend, de React, React Native, Tailwind, Next.js, Node.js, Express, Python, Go, SQL, NoSQL, PostgreSQL, Mongodb, Mongoose, Socket.io",
+  verification: {
+    google: "O1_T6dW1Hhj3k4UTlIesHu7Mt_cKFVqEM3r-CFCj9LI",
+  },
 };
 
 export default function RootLayout({
