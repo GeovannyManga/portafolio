@@ -29,7 +29,7 @@ export default function Welcome() {
           <a
             aria-label="link de servicios"
             className="flex h-12 px-6 items-center justify-center rounded-md font-semibold text-black border-2 border-gray-900 hover:bg-gray-100 transition"
-            href="#servicios"
+            href="https://wa.me/573114259002"
           >
             Servicios
           </a>
